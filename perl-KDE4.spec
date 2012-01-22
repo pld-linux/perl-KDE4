@@ -23,7 +23,7 @@ BuildRequires:	attica-devel
 BuildRequires:	kde4-kate-devel
 BuildRequires:	kde4-kdepimlibs-devel
 BuildRequires:	kde4-okular-devel
-BuildRequires:	perl-Qt4 >= %{version}
+BuildRequires:	perl-Qt4-devel >= %{version}
 BuildRequires:	kde4-smokekde-devel >= %{version}
 BuildRequires:	soprano-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
