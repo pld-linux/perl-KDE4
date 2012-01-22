@@ -1,7 +1,7 @@
 
 %define         _state          stable
 %define         orgname         perlkde
-%define         qtver           4.7.4
+%define         qtver           4.8.0
 
 # Conditional build:
 %bcond_with	tests		# do not perform "make test"
@@ -10,21 +10,21 @@
 Summary:	KDE4 - A Perl module interface to KDE4
 Summary(pl.UTF-8):	KDE4 - interfejs Perla do KDE4
 Name:		perl-KDE4
-Version:	4.7.3
+Version:	4.8.0
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	90876c99b8a07fc2c31bce2348491803
+# Source0-md5:	a85ad9879e3baeffed23d6d4d4bb0e24
 URL:		http://www.kde.org/
 # BuildRequires:	sonnet-devel
 BuildRequires:	akonadi-devel
 BuildRequires:	attica-devel
-BuildRequires:	kate-devel
+BuildRequires:	kde4-kate-devel
 BuildRequires:	kde4-kdepimlibs-devel
-BuildRequires:	okular-devel
+BuildRequires:	kde4-okular-devel
 BuildRequires:	perl-Qt4 >= %{version}
-BuildRequires:	smokekde-devel >= %{version}
+BuildRequires:	kde4-smokekde-devel >= %{version}
 BuildRequires:	soprano-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
