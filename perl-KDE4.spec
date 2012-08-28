@@ -1,11 +1,10 @@
-
 %define         _state          stable
 %define         orgname         perlkde
 %define         qtver           4.8.0
 
 # Conditional build:
 %bcond_with	tests		# do not perform "make test"
-#
+
 %include	/usr/lib/rpm/macros.perl
 Summary:	KDE4 - A Perl module interface to KDE4
 Summary(pl.UTF-8):	KDE4 - interfejs Perla do KDE4
@@ -23,12 +22,14 @@ BuildRequires:	attica-devel
 BuildRequires:	kde4-kate-devel
 BuildRequires:	kde4-kdepimlibs-devel
 BuildRequires:	kde4-okular-devel
-BuildRequires:	perl-Qt4-devel >= %{version}
 BuildRequires:	kde4-smokekde-devel >= %{version}
+BuildRequires:	perl-Qt4-devel >= %{version}
 BuildRequires:	soprano-devel
+BuildRequires:	xz
+BuildRequires:	tar >= 1:1.22
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_noautoreq	'perl(.*_internal)'
+%define		_noautoreq	perl(.*_internal)
 
 %description
 This module provides bindings to the KDE 4 libraries for Perl.
@@ -49,10 +50,9 @@ cd build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
-%{__make} -C build/ install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	kde_htmldir=%{_kdedocdir}
+%{__make} -C build install \
+	kde_htmldir=%{_kdedocdir} \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
