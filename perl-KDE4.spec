@@ -14,7 +14,7 @@ Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://download.kde.org/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	f028d67b0a8534f386d20a1b51ba01fb
+# Source0-md5:	c94a719d680707dae5b35a9ebba1a9f0
 URL:		http://www.kde.org/
 # BuildRequires:	sonnet-devel
 BuildRequires:	akonadi-devel
