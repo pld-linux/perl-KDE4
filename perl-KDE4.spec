@@ -10,7 +10,7 @@ Summary:	KDE4 - A Perl module interface to KDE4
 Summary(pl.UTF-8):	KDE4 - interfejs Perla do KDE4
 Name:		perl-KDE4
 Version:	4.14.3
-Release:	10
+Release:	11
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://download.kde.org/%{state}/%{version}/src/%{orgname}-%{version}.tar.xz
@@ -19,6 +19,7 @@ URL:		http://www.kde.org/
 # BuildRequires:	sonnet-devel
 BuildRequires:	akonadi-devel
 BuildRequires:	attica-devel
+BuildRequires:	automoc4
 BuildRequires:	kde4-kate-devel
 BuildRequires:	kde4-kdepimlibs-devel
 BuildRequires:	kde4-okular-devel
