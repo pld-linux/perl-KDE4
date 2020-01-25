@@ -5,7 +5,6 @@
 # Conditional build:
 %bcond_with	tests		# do not perform "make test"
 
-%include	/usr/lib/rpm/macros.perl
 Summary:	KDE4 - A Perl module interface to KDE4
 Summary(pl.UTF-8):	KDE4 - interfejs Perla do KDE4
 Name:		perl-KDE4
